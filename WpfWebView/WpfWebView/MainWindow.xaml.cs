@@ -33,11 +33,12 @@ namespace WpfWebView
         {
             var options = new OidcClientOptions()
             {
-                Authority = "https://demo.identityserver.io/",
-                ClientId = "native.code",
+                Authority = "https://dev-158000.okta.com/",
+                ClientId = "0oap3ktastxKA81BJ4x6",
                 Scope = "openid profile email",
-                RedirectUri = "http://127.0.0.1/sample-wpf-app",
-                Browser = new WpfEmbeddedBrowser()
+                RedirectUri = "http://localhost:8080/authorization-code/callback",
+                Browser = new WpfEmbeddedBrowser(),
+                ClientSecret = "UoYWsWn1-Tiwp2NItHVup46iDCwZVolDGTW5sHs3"
             };
 
             _oidcClient = new OidcClient(options);

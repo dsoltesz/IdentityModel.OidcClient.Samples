@@ -29,7 +29,7 @@ namespace WpfWebView
             {
                 Width=900,
                 Height=625,
-                Title = "IdentityServer Demo Login"
+                Title = "VPS Demo Login"
             };
 
             // Note: Unfortunately, WebBrowser is very limited and does not give sufficient information for 
