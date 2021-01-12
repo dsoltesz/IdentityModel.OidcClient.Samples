@@ -35,6 +35,7 @@ namespace WpfWebView
             // Note: Unfortunately, WebBrowser is very limited and does not give sufficient information for 
             //   robust error handling. The alternative is to use a system browser or third party embedded
             //   library (which tend to balloon the size of your application and are complicated).
+            WebBrowserHelper.ClearCache();
             var webBrowser = new WebBrowser();
 
             var signal = new SemaphoreSlim(0, 1);
